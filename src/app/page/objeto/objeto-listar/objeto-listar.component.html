@@ -1,0 +1,37 @@
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8" border="5">
+
+
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef> ID </th>
+      <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="nombre">
+      <th mat-header-cell *matHeaderCellDef> Nombre </th>
+      <td mat-cell *matCellDef="let element"> {{element.nombreObjeto}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="distancia">
+      <th mat-header-cell *matHeaderCellDef> Distancia </th>
+      <td mat-cell *matCellDef="let element"> {{element.distancia}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="distanciaLimite">
+      <th mat-header-cell *matHeaderCellDef> Distancia Limite </th>
+      <td mat-cell *matCellDef="let element"> {{element.distanciaLimite}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="ubicacion">
+        <th mat-header-cell *matHeaderCellDef> Distancia Limite </th>
+        <td mat-cell *matCellDef="let element"> {{element.ubicacion}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="fechaVinculo">
+        <th mat-header-cell *matHeaderCellDef> Distancia Limite </th>
+        <td mat-cell *matCellDef="let element"> {{element.fechaVinculo}} </td>
+      </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+
