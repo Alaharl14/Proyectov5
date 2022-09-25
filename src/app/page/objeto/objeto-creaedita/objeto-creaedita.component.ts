@@ -40,7 +40,7 @@ export class ObjetoCreaeditaComponent implements OnInit {
         })
       })
     }
-      this.router.navigate(['reporte']);
+      this.router.navigate(['objeto']);
     } else {
       this.mensaje = "Complete los valores requeridos";
     }
