@@ -1,1 +1,40 @@
-<p>objeto-creaedita works!</p>
+<div class="container">
+
+    <h1>Agregar Objeto</h1>
+  
+    <mat-form-field class="example-full-width">
+      <mat-label>Id</mat-label>
+      <input matInput placeholder="Id" [(ngModel)]="objeto.id">
+    </mat-form-field>
+    <br>
+    <mat-form-field class="example-full-width">
+        <mat-label>Nombre</mat-label>
+        <input matInput required placeholder="nombre" [(ngModel)]="objeto.nombreObjeto">
+    </mat-form-field>
+    <br>
+  <mat-form-field class="example-full-width">
+    <mat-label>Distancia</mat-label>
+    <input matInput required placeholder="distancia" [(ngModel)]="objeto.distancia">
+  </mat-form-field>
+
+  <br>
+  <mat-form-field class="example-full-width">
+    <mat-label>Distancia Limite</mat-label>
+    <input matInput required placeholder="distancia limite" [(ngModel)]="objeto.distanciaLimite">
+  </mat-form-field>
+  <br>
+  <mat-form-field class="example-full-width">
+    <mat-label>Ubicacion</mat-label>
+    <input matInput required placeholder="ubicacion" [(ngModel)]="objeto.ubicacion">
+  </mat-form-field>
+  <br>
+  <mat-form-field class="example-full-width">
+    <mat-label>Fecha</mat-label>
+    <input matInput required placeholder="fecha vinculo" [(ngModel)]="objeto.fechaVinculo">
+  </mat-form-field>
+  <br>
+  <button mat-raised-button color="primary" (click)="aceptar()">Aceptar</button>
+  <button mat-raised-button color="warn" routerLink="/objeto">Cancelar</button>
+  <p>{{mensaje}}</p>
+
+</div>

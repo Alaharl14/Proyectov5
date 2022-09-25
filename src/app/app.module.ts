@@ -21,6 +21,7 @@ import { ReporteCreaeditaComponent } from './page/reporte/reporte-creaedita/repo
 import { MatDialogModule } from '@angular/material/dialog';
 import { ReporteDialogoComponent } from './page/reporte/reporte-listar/reporte-dialogo/reporte-dialogo.component';
 import { ReporteBuscarComponent } from './page/reporte/reporte-buscar/reporte-buscar.component';
+import { ObjetoBuscarComponent } from './page/objeto/objeto-buscar/objeto-buscar.component';
 
 
 @NgModule({
@@ -36,6 +37,7 @@ import { ReporteBuscarComponent } from './page/reporte/reporte-buscar/reporte-bu
     ReporteCreaeditaComponent,
     ReporteDialogoComponent,
     ReporteBuscarComponent,
+    ObjetoBuscarComponent,
   ],
   imports: [
     BrowserModule,

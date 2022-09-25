@@ -1,7 +1,8 @@
+import { Reporte } from './../model/reporte';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 import { Objeto } from '../model/objeto';
-import { Subject } from 'rxjs';
+import { Subject, EMPTY} from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -25,4 +26,13 @@ export class ObjetoService {
   getLista() {
     return this.listaCambio.asObservable();
   }
+  modificar(objeto: Objeto)
+  {
+    return this.http.put(this.url+"/"+objeto.id, objeto);
+  }
+  listarId(id: number)
+  {
+    return this.http.get<Objeto>(`${this.url}/${id}`);
+  }
+
 }
