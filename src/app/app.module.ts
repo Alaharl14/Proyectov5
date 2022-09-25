@@ -22,6 +22,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { ReporteDialogoComponent } from './page/reporte/reporte-listar/reporte-dialogo/reporte-dialogo.component';
 import { ReporteBuscarComponent } from './page/reporte/reporte-buscar/reporte-buscar.component';
 import { ObjetoBuscarComponent } from './page/objeto/objeto-buscar/objeto-buscar.component';
+import { ObjetoDialogoComponent } from './page/objeto/objeto-listar/objeto-dialogo/objeto-dialogo.component';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { ObjetoBuscarComponent } from './page/objeto/objeto-buscar/objeto-buscar
     ReporteDialogoComponent,
     ReporteBuscarComponent,
     ObjetoBuscarComponent,
+    ObjetoDialogoComponent,
   ],
   imports: [
     BrowserModule,

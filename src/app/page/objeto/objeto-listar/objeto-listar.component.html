@@ -2,6 +2,7 @@
   <div style=" text-align: center;">
     <h1>Lista de objetos</h1>
   </div>
+  <app-objeto-buscar></app-objeto-buscar>
 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" border="5">
 
     <ng-container matColumnDef="id">
@@ -32,6 +33,15 @@
       <ng-container matColumnDef="fechaVinculo">
         <th mat-header-cell *matHeaderCellDef> Distancia Limite </th>
         <td mat-cell *matCellDef="let element"> {{element.fechaVinculo}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="acciones">
+        <th mat-header-cell *matHeaderCellDef style="text-align: center;"> Acciones</th>
+        <td mat-cell *matCellDef="let element"><button mat-raised-button color="primary" style="margin-left: 22%"
+          [routerLink]="['edicion', element?.id]">
+        Actualizar</button>
+        <button mat-raised-button color="accent" (click)="confirmar(element.id)" style="margin-left: 22%;">Eliminar</button>
+        </td>
       </ng-container>
   
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
