@@ -21,8 +21,10 @@ import { ReporteCreaeditaComponent } from './page/reporte/reporte-creaedita/repo
 import { MatDialogModule } from '@angular/material/dialog';
 import { ReporteDialogoComponent } from './page/reporte/reporte-listar/reporte-dialogo/reporte-dialogo.component';
 import { ReporteBuscarComponent } from './page/reporte/reporte-buscar/reporte-buscar.component';
-import { ObjetoBuscarComponent } from './page/objeto/objeto-buscar/objeto-buscar.component';
-import { ObjetoDialogoComponent } from './page/objeto/objeto-listar/objeto-dialogo/objeto-dialogo.component';
+import { CuentaCreaeditaComponent } from './page/cuenta/cuenta-creaedita/cuenta-creaedita.component';
+import { CuentaBuscarComponent } from './page/cuenta/cuenta-buscar/cuenta-buscar.component';
+import { CuentaDialogoComponent } from './page/cuenta/cuenta-listar/cuenta-dialogo/cuenta-dialogo.component';
+
 
 
 @NgModule({
@@ -38,8 +40,10 @@ import { ObjetoDialogoComponent } from './page/objeto/objeto-listar/objeto-dialo
     ReporteCreaeditaComponent,
     ReporteDialogoComponent,
     ReporteBuscarComponent,
-    ObjetoBuscarComponent,
-    ObjetoDialogoComponent,
+    CuentaCreaeditaComponent,
+    CuentaBuscarComponent,
+    CuentaDialogoComponent,
+
   ],
   imports: [
     BrowserModule,
