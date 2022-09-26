@@ -26,6 +26,11 @@ import { CuentaBuscarComponent } from './page/cuenta/cuenta-buscar/cuenta-buscar
 import { CuentaDialogoComponent } from './page/cuenta/cuenta-listar/cuenta-dialogo/cuenta-dialogo.component';
 import { ObjetoBuscarComponent } from './page/objeto/objeto-buscar/objeto-buscar.component';
 import { ObjetoDialogoComponent } from './page/objeto/objeto-listar/objeto-dialogo/objeto-dialogo.component';
+import { DistritoComponent } from './page/distrito/distrito.component';
+import { DistritoBuscarComponent } from './page/distrito/distrito-buscar/distrito-buscar.component';
+import { DistritoCreaeditaComponent } from './page/distrito/distrito-creaedita/distrito-creaedita.component';
+import { DistritoListarComponent } from './page/distrito/distrito-listar/distrito-listar.component';
+import { DistritoDialogoComponent } from './page/distrito/distrito-listar/distrito-dialogo/distrito-dialogo.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +49,13 @@ import { ObjetoDialogoComponent } from './page/objeto/objeto-listar/objeto-dialo
     CuentaBuscarComponent,
     CuentaDialogoComponent,
     ObjetoBuscarComponent,
-    ObjetoDialogoComponent
+    ObjetoDialogoComponent,
+    DistritoComponent,
+    DistritoBuscarComponent,
+    DistritoCreaeditaComponent,
+    DistritoListarComponent,
+    DistritoDialogoComponent,
+    
   ],
   imports: [
     BrowserModule,
