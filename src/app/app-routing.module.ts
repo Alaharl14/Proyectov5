@@ -5,10 +5,13 @@ import { ObjetoComponent } from './page/objeto/objeto.component';
 import { ReporteComponent } from './page/reporte/reporte.component';
 import { ObjetoCreaeditaComponent } from './page/objeto/objeto-creaedita/objeto-creaedita.component';
 import { ReporteCreaeditaComponent } from './page/reporte/reporte-creaedita/reporte-creaedita.component';
+import { CuentaCreaeditaComponent } from './page/cuenta/cuenta-creaedita/cuenta-creaedita.component';
+
 
 const routes: Routes = [{
   path: 'cuenta', component: CuentaComponent, children:[
-
+    { path: 'agregar', component: CuentaCreaeditaComponent },
+    { path: 'edicion/:id', component: CuentaCreaeditaComponent }
   ]
 }, {
   path: 'objeto', component: ObjetoComponent, children:[
