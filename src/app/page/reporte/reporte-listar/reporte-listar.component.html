@@ -29,7 +29,7 @@
         <th mat-header-cell *matHeaderCellDef > Acciones </th>
         <td mat-cell *matCellDef="let element"> <button mat-raised-button color="primary" style="margin-left: 22%;"
             [routerLink]="['edicion', element?.id]">Actualizar</button>
-            <button mat-raised-button color="success" (click)="confirmar(element.id)" style="margin-left: 22%;">Eliminar</button>
+            <button mat-raised-button color="accent" (click)="confirmar(element.id)" style="margin-left: 22%;">Eliminar</button>
         </td>
         
       </ng-container>
