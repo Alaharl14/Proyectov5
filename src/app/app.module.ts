@@ -21,6 +21,11 @@ import { ReporteCreaeditaComponent } from './page/reporte/reporte-creaedita/repo
 import { MatDialogModule } from '@angular/material/dialog';
 import { ReporteDialogoComponent } from './page/reporte/reporte-listar/reporte-dialogo/reporte-dialogo.component';
 import { ReporteBuscarComponent } from './page/reporte/reporte-buscar/reporte-buscar.component';
+import { DistritoComponent } from './page/distrito/distrito.component';
+import { DistritoBuscarComponent } from './page/distrito/distrito-buscar/distrito-buscar.component';
+import { DistritoCreaeditaComponent } from './page/distrito/distrito-creaedita/distrito-creaedita.component';
+import { DistritoListarComponent } from './page/distrito/distrito-listar/distrito-listar.component';
+import { DistritoDialogoComponent } from './page/distrito/distrito-listar/distrito-dialogo/distrito-dialogo.component';
 
 
 @NgModule({
@@ -36,6 +41,11 @@ import { ReporteBuscarComponent } from './page/reporte/reporte-buscar/reporte-bu
     ReporteCreaeditaComponent,
     ReporteDialogoComponent,
     ReporteBuscarComponent,
+    DistritoComponent,
+    DistritoBuscarComponent,
+    DistritoCreaeditaComponent,
+    DistritoListarComponent,
+    DistritoDialogoComponent,
   ],
   imports: [
     BrowserModule,
