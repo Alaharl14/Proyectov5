@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CuentaComponent } from './page/cuenta/cuenta.component';
 import { ObjetoComponent } from './page/objeto/objeto.component';
@@ -15,7 +15,8 @@ const routes: Routes = [{
   ]
 }, {
   path: 'objeto', component: ObjetoComponent, children:[
-    { path: 'agregar', component: ObjetoCreaeditaComponent }
+    { path: 'agregar', component: ObjetoCreaeditaComponent },
+    {path:'edicion/:id', component: ObjetoCreaeditaComponent}
   ]
 }, {
   path: 'reporte', component: ReporteComponent, children:[

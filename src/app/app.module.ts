@@ -26,6 +26,7 @@ import { CuentaBuscarComponent } from './page/cuenta/cuenta-buscar/cuenta-buscar
 import { CuentaDialogoComponent } from './page/cuenta/cuenta-listar/cuenta-dialogo/cuenta-dialogo.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,6 +43,7 @@ import { CuentaDialogoComponent } from './page/cuenta/cuenta-listar/cuenta-dialo
     CuentaCreaeditaComponent,
     CuentaBuscarComponent,
     CuentaDialogoComponent,
+
   ],
   imports: [
     BrowserModule,

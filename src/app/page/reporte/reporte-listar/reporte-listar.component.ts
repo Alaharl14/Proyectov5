@@ -37,7 +37,7 @@ export class ReporteListarComponent implements OnInit {
   eliminar(id: number) {
     this.ps.eliminar(id).subscribe(() => {
       this.ps.listar().subscribe(data => {
-        this.ps.setLista(data);/* se ejecuta la línea 27*/
+        this.ps.setLista(data);
       });
     });
   }
