@@ -24,8 +24,8 @@ import { ReporteBuscarComponent } from './page/reporte/reporte-buscar/reporte-bu
 import { CuentaCreaeditaComponent } from './page/cuenta/cuenta-creaedita/cuenta-creaedita.component';
 import { CuentaBuscarComponent } from './page/cuenta/cuenta-buscar/cuenta-buscar.component';
 import { CuentaDialogoComponent } from './page/cuenta/cuenta-listar/cuenta-dialogo/cuenta-dialogo.component';
-
-
+import { ObjetoBuscarComponent } from './page/objeto/objeto-buscar/objeto-buscar.component';
+import { ObjetoDialogoComponent } from './page/objeto/objeto-listar/objeto-dialogo/objeto-dialogo.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +43,8 @@ import { CuentaDialogoComponent } from './page/cuenta/cuenta-listar/cuenta-dialo
     CuentaCreaeditaComponent,
     CuentaBuscarComponent,
     CuentaDialogoComponent,
-
+    ObjetoBuscarComponent,
+    ObjetoDialogoComponent
   ],
   imports: [
     BrowserModule,
