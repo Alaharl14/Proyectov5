@@ -1,0 +1,49 @@
+<div class="container">
+  <div style=" text-align: center;">
+    <h1>Cuenta</h1>
+  </div>
+  
+    <mat-form-field class="example-full-width">
+      <mat-label>Id</mat-label>
+      <input matInput placeholder="Id" [(ngModel)]="cuenta.id">
+    </mat-form-field>
+  
+    <br>
+  
+    <mat-form-field class="example-full-width">
+      <mat-label>Nombre</mat-label>
+      <input matInput required placeholder="nombre" [(ngModel)]="cuenta.nombreCuenta">
+  
+    </mat-form-field>
+  
+    <br>
+    <mat-form-field class="example-full-width">
+      <mat-label>Contrasena</mat-label>
+      <input matInput required placeholder="descripcion" [(ngModel)]="cuenta.contrasena">
+    </mat-form-field>
+  
+    <br>
+    <mat-form-field class="example-full-width">
+      <mat-label>Correo</mat-label>
+      <input matInput required placeholder="fecha" [(ngModel)]="cuenta.correo">
+    </mat-form-field>
+
+    <br>
+    <mat-form-field class="example-full-width">
+      <mat-label>Numero</mat-label>
+      <input matInput required placeholder="fecha" [(ngModel)]="cuenta.numero">
+    </mat-form-field>
+
+    <br>
+    <mat-form-field class="example-full-width">
+      <mat-label>Direccion</mat-label>
+      <input matInput required placeholder="fecha" [(ngModel)]="cuenta.direccion">
+    </mat-form-field>
+  
+    <br>
+    <button mat-raised-button color="primary" (click)="aceptar()">Aceptar</button>
+    <button mat-raised-button color="warn" routerLink="/cuenta">Cancelar</button>
+    <p>{{mensaje}}</p>
+  
+  </div>
+  

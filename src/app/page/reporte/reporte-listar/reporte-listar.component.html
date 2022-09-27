@@ -29,7 +29,7 @@
         <th mat-header-cell *matHeaderCellDef > Acciones </th>
         <td mat-cell *matCellDef="let element"> <button mat-raised-button color="primary" style="margin-left: 22%;"
             [routerLink]="['edicion', element?.id]">Actualizar</button>
-            <button mat-raised-button color="success" (click)="confirmar(element.id)" style="margin-left: 22%;">Eliminar</button>
+            <button mat-raised-button color="accent" (click)="confirmar(element.id)" style="margin-left: 22%;">Eliminar</button>
         </td>
         
       </ng-container>
@@ -42,9 +42,9 @@
   
     <div class="example-button-container">
   
-      <button mat-mini-fab color="primary" aria-label="Example icon button with a plus one icon"
+      <button mat-stroked-button color="primary" aria-label="Example icon button with a plus one icon"
         routerLink="/reporte/agregar">
-        <mat-icon>plus_one</mat-icon>
+        <mat-icon>add</mat-icon>
       </button>
     </div>
     

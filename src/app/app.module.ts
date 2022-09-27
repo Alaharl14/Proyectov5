@@ -21,12 +21,16 @@ import { ReporteCreaeditaComponent } from './page/reporte/reporte-creaedita/repo
 import { MatDialogModule } from '@angular/material/dialog';
 import { ReporteDialogoComponent } from './page/reporte/reporte-listar/reporte-dialogo/reporte-dialogo.component';
 import { ReporteBuscarComponent } from './page/reporte/reporte-buscar/reporte-buscar.component';
+import { CuentaCreaeditaComponent } from './page/cuenta/cuenta-creaedita/cuenta-creaedita.component';
+import { CuentaBuscarComponent } from './page/cuenta/cuenta-buscar/cuenta-buscar.component';
+import { CuentaDialogoComponent } from './page/cuenta/cuenta-listar/cuenta-dialogo/cuenta-dialogo.component';
+import { ObjetoBuscarComponent } from './page/objeto/objeto-buscar/objeto-buscar.component';
+import { ObjetoDialogoComponent } from './page/objeto/objeto-listar/objeto-dialogo/objeto-dialogo.component';
 import { DistritoComponent } from './page/distrito/distrito.component';
 import { DistritoBuscarComponent } from './page/distrito/distrito-buscar/distrito-buscar.component';
 import { DistritoCreaeditaComponent } from './page/distrito/distrito-creaedita/distrito-creaedita.component';
 import { DistritoListarComponent } from './page/distrito/distrito-listar/distrito-listar.component';
 import { DistritoDialogoComponent } from './page/distrito/distrito-listar/distrito-dialogo/distrito-dialogo.component';
-
 
 @NgModule({
   declarations: [
@@ -41,11 +45,17 @@ import { DistritoDialogoComponent } from './page/distrito/distrito-listar/distri
     ReporteCreaeditaComponent,
     ReporteDialogoComponent,
     ReporteBuscarComponent,
+    CuentaCreaeditaComponent,
+    CuentaBuscarComponent,
+    CuentaDialogoComponent,
+    ObjetoBuscarComponent,
+    ObjetoDialogoComponent,
     DistritoComponent,
     DistritoBuscarComponent,
     DistritoCreaeditaComponent,
     DistritoListarComponent,
     DistritoDialogoComponent,
+    
   ],
   imports: [
     BrowserModule,
