@@ -126,7 +126,7 @@ module.exports = function () {
             nombreEstado:"Robado", 
         },
         ],
-        categoriaObjeto: [
+        categoria: [
         {
             id:1,
             nombreCategoria:"Hogar",       
