@@ -8,6 +8,8 @@ import { ObjetoCreaeditaComponent } from './page/objeto/objeto-creaedita/objeto-
 import { ReporteCreaeditaComponent } from './page/reporte/reporte-creaedita/reporte-creaedita.component';
 import { DistritoCreaeditaComponent } from './page/distrito/distrito-creaedita/distrito-creaedita.component';
 import { CuentaCreaeditaComponent } from './page/cuenta/cuenta-creaedita/cuenta-creaedita.component';
+import { CategoriaCreaeditaComponent } from './page/categoria/categoria-creaedita/categoria-creaedita.component';
+import { CategoriaComponent } from './page/categoria/categoria.component';
 
 const routes: Routes = [{
   path: 'cuenta', component: CuentaComponent, children:[
@@ -31,7 +33,13 @@ const routes: Routes = [{
       { path: 'agregar', component: DistritoCreaeditaComponent },
       { path: 'edicion/:id', component: DistritoCreaeditaComponent }
     
-  ]
+  ] 
+}, {  
+  path: 'categoria', component: CategoriaComponent, children:[
+    { path: 'agregar', component: CategoriaCreaeditaComponent },
+    { path: 'edicion/:id', component: CategoriaCreaeditaComponent }
+  
+] 
 }];
 
 @NgModule({
