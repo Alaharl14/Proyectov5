@@ -31,6 +31,11 @@ import { DistritoBuscarComponent } from './page/distrito/distrito-buscar/distrit
 import { DistritoCreaeditaComponent } from './page/distrito/distrito-creaedita/distrito-creaedita.component';
 import { DistritoListarComponent } from './page/distrito/distrito-listar/distrito-listar.component';
 import { DistritoDialogoComponent } from './page/distrito/distrito-listar/distrito-dialogo/distrito-dialogo.component';
+import { CategoriaComponent } from './page/categoria/categoria.component';
+import { CategoriaListarComponent } from './page/categoria/categoria-listar/categoria-listar.component';
+import { CategoriaCreaeditaComponent } from './page/categoria/categoria-creaedita/categoria-creaedita.component';
+import { CategoriaBuscarComponent } from './page/categoria/categoria-buscar/categoria-buscar.component';
+import { CategoriaDialogoComponent } from './page/categoria/categoria-listar/categoria-dialogo/categoria-dialogo.component';
 
 @NgModule({
   declarations: [
@@ -55,6 +60,11 @@ import { DistritoDialogoComponent } from './page/distrito/distrito-listar/distri
     DistritoCreaeditaComponent,
     DistritoListarComponent,
     DistritoDialogoComponent,
+    CategoriaComponent,
+    CategoriaListarComponent,
+    CategoriaCreaeditaComponent,
+    CategoriaBuscarComponent,
+    CategoriaDialogoComponent,
     
   ],
   imports: [
